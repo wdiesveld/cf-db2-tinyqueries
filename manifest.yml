@@ -1,0 +1,11 @@
+---
+applications:
+- name: my-tinyqueries-app
+  memory: 128M 
+  instances: 1
+  host: my-tinyqueries-app
+  path: .
+  buildpack: https://github.com/ibmdb/db2heroku-buildpack-php
+  services:
+  - my-test-db2
+  - my-test-tinyqueries-project
