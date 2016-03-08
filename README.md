@@ -29,7 +29,13 @@ It is an out-of-the-box implementation of [TinyQueries PHP-libs v3.0.7] and is m
   cf push
   ```
 
-1. After the application is deployed you can use the TinyQueries IDE to create and publish queries to this application.
+1. After the application is deployed, you need to run the init-config script in your browser.
+
+	```bash
+	[your-application-url]/init-config.php
+	```
+	
+1. After the application is deployed you can access your application URL in the browser. You will find further instructions how to use TinyQueries from there.	
 
 [TinyQueries PHP-libs v3.0.7]:https://github.com/wdiesveld/tiny-queries-php-api/releases/tag/v3.0.7a
 [TinyQueries]:http://www.tinyqueries.com
