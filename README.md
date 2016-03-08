@@ -30,15 +30,6 @@ It is an out-of-the-box implementation of [TinyQueries PHP-libs v3.0.7] and is m
   ```
 
 1. After the application is deployed you can use the TinyQueries IDE to create and publish queries to this application.
-  
-### How It Works
-
-When you push the application here's what happens.
-
-1. The local bits are pushed to your target. It includes the changes we made and a build pack extension for TinyQueries.
-1. The server downloads the [PHP Build Pack] and runs it.  This installs HTTPD and PHP.
-1. The build pack sees the extension that we pushed and runs it.  The extension downloads the stock TinyQueries file from GitHub, unzips it and installs it into the `htdocs` directory.  It then copies the rest of the files that we pushed and replaces the default TinyQueries files with them. 
-1. At this point, the build pack is done and CF runs our droplet.
 
 [TinyQueries PHP-libs v3.0.7]:https://github.com/wdiesveld/tiny-queries-php-api/releases/tag/v3.0.7a
 [TinyQueries]:http://www.tinyqueries.com
